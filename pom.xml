@@ -116,6 +116,18 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>ant-contrib</groupId>
+			<artifactId>ant-contrib</artifactId>
+			<version>1.0b3</version>
+			<exclusions>
+				<exclusion>
+					<groupId>ant</groupId>
+					<artifactId>ant</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -134,11 +146,8 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.2</version>
 				<configuration>
-					<warName>${project.artifactId}-${project.version}-${binding}-${binding-version}</warName>
+					<classifier>${binding}-${binding-version}</classifier>
 					<webResources>
-						<resource>
-							<directory>${basedir}/conf/${binding}</directory>
-						</resource>
 						<resource>
 							<directory>${basedir}/conf/${binding}-${binding-version}</directory>
 						</resource>
@@ -150,6 +159,10 @@
 
 	<modules>
 		<module>saml/idp</module>
+		<module>saml/employee</module>
+		<module>saml/employee-sig</module>
+		<module>saml/sales-post</module>
+		<module>saml/sales-post-sig</module>
 	</modules>
 
 	<repositories>
