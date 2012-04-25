@@ -163,6 +163,8 @@
 		<module>saml/employee-sig</module>
 		<module>saml/sales-post</module>
 		<module>saml/sales-post-sig</module>
+		
+		<module>ws-trust/picketlink-sts</module>
 	</modules>
 
 	<repositories>
