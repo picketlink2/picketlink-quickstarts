@@ -1,4 +1,4 @@
-# PicketLink Federation: Service Provider Example #
+# PicketLink Federation: Identity Provider Example #
  
 This project is an implementation of a PicketLink Identity Provider.
 
