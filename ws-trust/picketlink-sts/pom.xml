@@ -8,9 +8,9 @@
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>sales-post</artifactId>
+	<artifactId>picketlink-sts</artifactId>
 	<packaging>war</packaging>
-	<name>PicketLink Federation: SAML Sales HTTP POST Binding Service Provider</name>
+	<name>PicketLink Federation: WS-Trust Security Token Service</name>
 	<url>http://labs.jboss.org/portal/picketlink/</url>
 	<description>PicketLink Samples contains the samples for Federated Identity Needs.</description>
 	<licenses>
