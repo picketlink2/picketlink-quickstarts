@@ -3,7 +3,9 @@
   <deployment>
     <!-- Add picketlink module dependency -->
     <dependencies>
+      <module name="org.jboss.security.xacml" />
       <module name="org.picketlink" />
+      <module name="org.picketbox" />
     </dependencies>
   </deployment>
 </jboss-deployment-structure>

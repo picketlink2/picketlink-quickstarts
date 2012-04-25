@@ -121,6 +121,7 @@
 			<groupId>ant-contrib</groupId>
 			<artifactId>ant-contrib</artifactId>
 			<version>1.0b3</version>
+			<scope>provided</scope>
 			<exclusions>
 				<exclusion>
 					<groupId>ant</groupId>
@@ -158,13 +159,18 @@
 	</build>
 
 	<modules>
+		<!-- SAML Support Examples -->
 		<module>saml/idp</module>
 		<module>saml/employee</module>
 		<module>saml/employee-sig</module>
 		<module>saml/sales-post</module>
 		<module>saml/sales-post-sig</module>
 		
+		<!-- WS-Trust Support Examples -->
 		<module>ws-trust/picketlink-sts</module>
+		
+		<!-- XACML Examples -->
+		<module>xacml/pdp</module>
 	</modules>
 
 	<repositories>

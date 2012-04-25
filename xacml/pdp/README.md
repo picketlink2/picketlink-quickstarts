@@ -1,10 +1,6 @@
-# PicketLink Federation: Service Provider Example #
+# PicketLink Federation: XACML Policy Decision Point (PDP) #
  
-This project is an implementation of a PicketLink Identity Provider.
-
-## Example Description ##
-
-This examples demonstrates how to configure an web application as an Identity Provider.
+This project is an implementation of a XACML Policy Decision Point.
 
 ## Build Information ##
 
