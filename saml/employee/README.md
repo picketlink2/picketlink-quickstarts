@@ -2,9 +2,13 @@
  
 This project is an implementation of a PicketLink Service Provider.
 
-# Build Informations #
+## Example Description ##
 
-This example was tested in the following servers:
+This examples demonstrates how to configure an web application as a Service Provider using HTTP Redirect Binding.
+
+## Build Information ##
+
+This example is tested in the following servers:
 
 + JBoss Application Server 5.x
 + JBoss Application Server 7.x
