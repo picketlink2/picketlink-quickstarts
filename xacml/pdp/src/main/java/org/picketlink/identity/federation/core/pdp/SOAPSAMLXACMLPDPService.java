@@ -33,7 +33,7 @@ import org.apache.log4j.Logger;
  * AS7 does not scan for annotated classes outside the scope of the WAR.
  * </p>
  * <p>
- *  It provides exactly same functionalities as its parent {@ SOAPSAMLXACMLPDP}. 
+ *  It provides exactly the same functionalities as its parent {@ SOAPSAMLXACMLPDP}. 
  * </p>
  * 
  * @author <a href="mailto:psilva@redhat.com">Pedro Silva</a>
