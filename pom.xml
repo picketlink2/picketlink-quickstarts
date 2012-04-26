@@ -81,6 +81,12 @@
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
+				<groupId>org.picketlink.distribution</groupId>
+				<artifactId>picketlink-jbas7</artifactId>
+				<version>${version.picketlink}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
 				<groupId>org.picketlink</groupId>
 				<artifactId>picketlink-bindings</artifactId>
 				<version>${version.picketlink}</version>
@@ -105,6 +111,10 @@
 		<dependency>
 			<groupId>org.picketlink</groupId>
 			<artifactId>picketlink-bindings-jboss</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.picketlink.distribution</groupId>
+			<artifactId>picketlink-jbas7</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.picketlink</groupId>
@@ -172,6 +182,8 @@
 		
 		<!-- XACML Examples -->
 		<module>xacml/pdp</module>
+		
+		<module>integration</module>
 	</modules>
 
 	<repositories>
