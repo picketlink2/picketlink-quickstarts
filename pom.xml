@@ -32,7 +32,7 @@
 
 	<modules>
 		<module>parent</module>
-		
+
 		<!-- SAML Support Examples -->
 		<module>saml/idp</module>
 		<module>saml/idp-sig</module>
@@ -47,6 +47,27 @@
 		<!-- XACML Examples -->
 		<module>xacml/pdp</module>
 	</modules>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.2-beta-2</version>
+				<configuration>
+					<descriptor>quickstarts.xml</descriptor>
+					<finalName>picketlink</finalName>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 
 
 </project>
