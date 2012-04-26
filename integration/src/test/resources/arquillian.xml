@@ -1,8 +1,0 @@
-<arquillian>
-	<container qualifier="jboss-as7" default="true">
-		<configuration>
-			<property name="jbossHome">${jboss.as.home}</property>
-			<property name="serverConfig">standalone.xml</property>
-		</configuration>
-	</container>
-</arquillian>
