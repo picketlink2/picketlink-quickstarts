@@ -1,4 +1,4 @@
-<!--
+/*
   ~ JBoss, Home of Professional Open Source.
   ~ Copyright (c) 2011, Red Hat, Inc., and individual contributors
   ~ as indicated by the @author tags. See the copyright.txt file in the
@@ -18,27 +18,61 @@
   ~ License along with this software; if not, write to the Free
   ~ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
   ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
-  -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+*/
+body {
+	background: url(images/rh_bg.png) repeat-x scroll 0 0 #F3F3F3;
+	color: #555555;
+	font: 12px/1.4 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
 
-<html>
-<head>
-<title>PicketLink Example Application</title>
-<META HTTP-EQUIV="refresh" CONTENT="1;URL=<%= request.getRequestURL().toString() %>">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="StyleSheet" href="css/idp.css" type="text/css">
-</head>
+.loginBox {
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	width:30em;
+	height:3em;
+	margin-top: -9em; /*set to a negative number 1/2 of your height*/
+	margin-left: -15em; /*set to a negative number 1/2 of your width*/
+	border: 1px solid #ccc;
+	background-color: #f3f3f3;
+}
 
-<body>
-	<img src="images/picketlink-banner-1180px.png"
-		style="margin-top: -10px; margin-left: -10px; opacity: 0.4; filter: alpha(opacity =   40);" />
-	<div class="loginBox"
-		style="margin-bottom: 80px; border: 1px solid #000000; width: 440px; background-color: #F8F8F8; align: center;">
-		<center>
-			<p>
-				<b>Logout in progress. You will be redirected to the Login Page.</b>
-			</p>
-		</center>
-	</div>
-</body>
-</html>
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50em;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	color: #5e8a9a;
+}
+
+h1 {
+	padding-top: 20px;
+	color: #7b1e1e;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #8ec6d9;
+}
+
+.content {
+	margin-left: 230px;
+}
+
+.dualbrand {
+	padding-top: 20px;
+}
+
+.as7 {
+	float: left;
+	margin-left: 10px;
+}
+
+.note {
+	font-size: 8pt;
+	color: #aaaaaa;
+}
