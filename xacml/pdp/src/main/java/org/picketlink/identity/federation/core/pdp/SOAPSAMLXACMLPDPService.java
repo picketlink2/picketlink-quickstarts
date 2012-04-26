@@ -28,9 +28,15 @@ import javax.xml.ws.WebServiceProvider;
 import org.apache.log4j.Logger;
 
 /**
- * SOAP 1.2 based XACML PDP that accepts SAML requests
- * @author Anil.Saldhana@redhat.com
- * @since Jan 24, 2011
+ * <p>
+ * This WS class must be packaged inside the WAR in order to run in AS7.
+ * AS7 does not scan for annotated classes outside the scope of the WAR.
+ * </p>
+ * <p>
+ *  It provides exactly the same functionalities as its parent {@ SOAPSAMLXACMLPDP}. 
+ * </p>
+ * 
+ * @author <a href="mailto:psilva@redhat.com">Pedro Silva</a>
  */
 @WebServiceProvider(serviceName = "SOAPSAMLXACMLPDP", portName = "SOAPSAMLXACMLPort", targetNamespace = "urn:picketlink:identity-federation:pdp", wsdlLocation = "WEB-INF/wsdl/SOAPSAMLXACMLPDP.wsdl")
 public class SOAPSAMLXACMLPDPService extends SOAPSAMLXACMLPDP
