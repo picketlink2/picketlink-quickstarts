@@ -176,13 +176,13 @@
 		<module>saml/employee-sig</module>
 		<module>saml/sales-post</module>
 		<module>saml/sales-post-sig</module>
-		
+
 		<!-- WS-Trust Support Examples -->
 		<module>ws-trust/picketlink-sts</module>
-		
+
 		<!-- XACML Examples -->
 		<module>xacml/pdp</module>
-		
+
 		<module>integration</module>
 	</modules>
 

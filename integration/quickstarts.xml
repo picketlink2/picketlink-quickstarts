@@ -1,0 +1,15 @@
+<assembly>
+	<id>quickstarts-${project.version}</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<fileSets>
+		<fileSet>
+			<directory>../saml/idp/target</directory>
+			<outputDirectory></outputDirectory>
+			<includes>
+				<include>*.war</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</assembly>
