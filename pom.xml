@@ -46,6 +46,8 @@
 
 		<!-- XACML Examples -->
 		<module>xacml/pdp</module>
+		
+		<module>integration</module>
 	</modules>
 
 	<build>
