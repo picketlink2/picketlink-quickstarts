@@ -1,6 +1,6 @@
 # PicketLink Federation: Quickstarts Integration Tests #
  
-Integration testes for the quickstarts.
+Integration tests for the quickstarts.
 
 ## Build Information ##
 
