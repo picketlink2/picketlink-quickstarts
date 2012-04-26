@@ -17,158 +17,22 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.picketlink</groupId>
-	<artifactId>picketlink-quickstarts-parent</artifactId>
-	<version>2.1.0-SNAPSHOT</version>
+	<parent>
+		<groupId>org.picketlink</groupId>
+		<artifactId>picketlink-quickstarts-parent</artifactId>
+		<version>2.1.0-SNAPSHOT</version>
+		<relativePath>parent</relativePath>
+	</parent>
 
-	<name>PicketLink Federation: Quickstarts Parent</name>
+	<artifactId>picketlink-quickstarts</artifactId>
+
+	<name>PicketLink Federation: Quickstarts Project</name>
 
 	<packaging>pom</packaging>
 
-	<url>
-        https://github.com/pedroigor/picketlink-quickstarts
-    </url>
-
-	<scm>
-		<connection>scm:git:${jboss.as.scm.connection}</connection>
-		<developerConnection>scm:git:${jboss.as.scm.connection}</developerConnection>
-		<url>${jboss.as.scm.url}</url>
-	</scm>
-
-	<organization>
-		<name>JBoss, a division of Red Hat</name>
-		<url>http://www.jboss.org</url>
-	</organization>
-
-	<licenses>
-		<license>
-			<name>lgpl</name>
-			<url>http://repository.jboss.org/licenses/lgpl-2.1.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
-
-	<properties>
-		<jboss.as.scm.url>https://github.com/pedroigor/picketlink-quickstarts</jboss.as.scm.url>
-		<jboss.as.scm.connection>git@github.com:pedroigor/picketlink-quickstarts</jboss.as.scm.connection>
-
-		<maven.compiler.source>1.6</maven.compiler.source>
-		<maven.compiler.target>1.6</maven.compiler.target>
-
-		<!-- PicketLink version supported -->
-		<version.picketlink>2.1.0-SNAPSHOT</version.picketlink>
-
-		<version.junit>4.8.2</version.junit>
-
-		<!-- Indicate the defaut server/binding version to package the applications -->
-		<binding>jboss</binding>
-		<binding-version>as7</binding-version>
-
-	</properties>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.picketlink</groupId>
-				<artifactId>picketlink-fed-core</artifactId>
-				<version>${version.picketlink}</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.picketlink</groupId>
-				<artifactId>picketlink-bindings-jboss</artifactId>
-				<version>${version.picketlink}</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.picketlink.distribution</groupId>
-				<artifactId>picketlink-jbas7</artifactId>
-				<version>${version.picketlink}</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.picketlink</groupId>
-				<artifactId>picketlink-bindings</artifactId>
-				<version>${version.picketlink}</version>
-				<scope>provided</scope>
-			</dependency>
-
-			<!-- Test dependencies -->
-			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>${version.junit}</version>
-				<scope>test</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.picketlink</groupId>
-			<artifactId>picketlink-fed-core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.picketlink</groupId>
-			<artifactId>picketlink-bindings-jboss</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.picketlink.distribution</groupId>
-			<artifactId>picketlink-jbas7</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.picketlink</groupId>
-			<artifactId>picketlink-bindings</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>ant-contrib</groupId>
-			<artifactId>ant-contrib</artifactId>
-			<version>1.0b3</version>
-			<scope>provided</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>ant</groupId>
-					<artifactId>ant</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.1</version>
-				<configuration>
-					<source>${maven.compiler.source}</source>
-					<target>${maven.compiler.target}</target>
-				</configuration>
-			</plugin>
-			<!-- Builds a WAR for a specific server/binding version -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>2.2</version>
-				<configuration>
-					<classifier>${binding}-${binding-version}</classifier>
-					<webResources>
-						<resource>
-							<directory>${basedir}/conf/${binding}-${binding-version}</directory>
-						</resource>
-					</webResources>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
-
 	<modules>
+		<module>parent</module>
+		
 		<!-- SAML Support Examples -->
 		<module>saml/idp</module>
 		<module>saml/idp-sig</module>
@@ -186,19 +50,5 @@
 		<module>integration</module>
 	</modules>
 
-	<repositories>
-		<repository>
-			<id>jboss-public-repository-group</id>
-			<name>JBoss Public Maven Repository Group</name>
-			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
-			<layout>default</layout>
-			<releases>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<updatePolicy>never</updatePolicy>
-			</snapshots>
-		</repository>
-	</repositories>
 
 </project>

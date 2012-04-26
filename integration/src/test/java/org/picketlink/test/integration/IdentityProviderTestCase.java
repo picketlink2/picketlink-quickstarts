@@ -1,4 +1,4 @@
-package org.picketlink.test.integration.idp;
+package org.picketlink.test.integration;
 
 import java.io.File;
 
