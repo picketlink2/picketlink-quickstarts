@@ -12,11 +12,11 @@ This example is tested in the following servers:
 + JBoss Application Server 7.x
 + Apache Tomcat 6.x
 
-For each target server there is a directory with specific configuration files. These files must be present in the resulting package in order to be deployed on an specific server.
+For each target server there is a directory with specific configuration files. These files must be present in the resulting package in order to be deployed on an specific server. For example, considering the saml/idp example:
 
-+ conf/jboss-as5
-+ conf/jboss-as7
-+ conf/tomcat-6
++ saml/idp/conf/jboss-as5
++ saml/idp/conf/jboss-as7
++ saml/idp/conf/tomcat-6
 
 To build the example execute the following command:
 
