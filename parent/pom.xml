@@ -56,7 +56,7 @@
 		<maven.compiler.target>1.6</maven.compiler.target>
 
 		<!-- PicketLink version supported -->
-		<version.picketlink>2.1.0-SNAPSHOT</version.picketlink>
+		<version.picketlink>2.1.0.Final</version.picketlink>
 
 		<version.junit>4.8.2</version.junit>
 
@@ -70,19 +70,7 @@
 		<dependencies>
 			<dependency>
 				<groupId>org.picketlink</groupId>
-				<artifactId>picketlink-fed-core</artifactId>
-				<version>${version.picketlink}</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.picketlink</groupId>
-				<artifactId>picketlink-bindings-jboss</artifactId>
-				<version>${version.picketlink}</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.picketlink</groupId>
-				<artifactId>picketlink-bindings</artifactId>
+				<artifactId>picketlink-core</artifactId>
 				<version>${version.picketlink}</version>
 				<scope>provided</scope>
 			</dependency>
@@ -100,15 +88,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.picketlink</groupId>
-			<artifactId>picketlink-fed-core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.picketlink</groupId>
-			<artifactId>picketlink-bindings-jboss</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.picketlink</groupId>
-			<artifactId>picketlink-bindings</artifactId>
+			<artifactId>picketlink-core</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
