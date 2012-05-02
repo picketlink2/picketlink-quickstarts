@@ -1,5 +1,5 @@
 <assembly>
-	<id>quickstarts-${project.version}</id>
+	<id>webapps-${binding}-${binding-version}</id>
 	<formats>
 		<format>zip</format>
 	</formats>
