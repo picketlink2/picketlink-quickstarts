@@ -1,6 +1,8 @@
 <PicketLink xmlns="urn:picketlink:identity-federation:config:2.1">
 	<PicketLinkSP xmlns="urn:picketlink:identity-federation:config:1.0"
-		ServerEnvironment="tomcat">
+		ServerEnvironment="tomcat"
+                BindingType="POST"
+                SupportsSignatures="true">
 		<IdentityURL>${idp-sig.url::http://localhost:8080/idp-sig/}
 		</IdentityURL>
 		<ServiceURL>${sales-post-sig.url::http://localhost:8080/sales-post-sig/}
@@ -23,5 +25,9 @@
 			class="org.picketlink.identity.federation.web.handlers.saml2.SAML2AuthenticationHandler" />
 		<Handler
 			class="org.picketlink.identity.federation.web.handlers.saml2.RolesGenerationHandler" />
+		<Handler
+			class="org.picketlink.identity.federation.web.handlers.saml2.SAML2SignatureGenerationHandler" />
+		<Handler
+			class="org.picketlink.identity.federation.web.handlers.saml2.SAML2SignatureValidationHandler" />
 	</Handlers>
 </PicketLink>
