@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jboss-web>
-   <security-domain>sp</security-domain>
-   <context-root>employee</context-root>
-   <valve>
-     <class-name>org.picketlink.identity.federation.bindings.tomcat.sp.SPRedirectFormAuthenticator</class-name>
-   </valve>
-
+	<security-domain>sp</security-domain>
+	<context-root>employee</context-root>
+	<valve>
+		<class-name>org.picketlink.identity.federation.bindings.tomcat.sp.ServiceProviderAuthenticator
+		</class-name>
+	</valve>
 </jboss-web>
