@@ -11,6 +11,10 @@
         <param-name>ignoreIncomingSignatures</param-name>
         <param-value>true</param-value>
      </param>
+     <param>
+     	<param-name>strictPostBinding</param-name>
+     	<param-value>true</param-value>
+     </param>
    </valve>
 
 </jboss-web>

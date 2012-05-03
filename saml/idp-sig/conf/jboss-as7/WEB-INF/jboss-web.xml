@@ -11,5 +11,13 @@
         <param-name>ignoreIncomingSignatures</param-name>
         <param-value>false</param-value>
      </param>
+     <param>
+     	<param-name>strictPostBinding</param-name>
+     	<param-value>true</param-value>
+     </param>
+     <param>
+     	<param-name>validatingAliasToTokenIssuer</param-name>
+     	<param-value>true</param-value>
+     </param>
    </valve>
 </jboss-web>
