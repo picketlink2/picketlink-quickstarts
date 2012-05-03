@@ -3,6 +3,5 @@
 		className="org.picketlink.identity.federation.bindings.tomcat.idp.IDPSAMLDebugValve" />
 	<Valve
 		className="org.picketlink.identity.federation.bindings.tomcat.idp.IDPWebBrowserSSOValve"
-		ignoreIncomingSignatures="false" signOutgoingMessages="true" validatingAliasToTokenIssuer="true"
-		strictPostBinding="true" />
+		ignoreIncomingSignatures="false" signOutgoingMessages="true" validatingAliasToTokenIssuer="true" />
 </Context>
