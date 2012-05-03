@@ -1,5 +1,5 @@
 <Context>
 	<Valve
 		className="org.picketlink.identity.federation.bindings.tomcat.idp.IDPWebBrowserSSOValve"
-		ignoreIncomingSignatures="false" signOutgoingMessages="true" />
+		ignoreIncomingSignatures="false" signOutgoingMessages="true" strictPostBinding="true" validatingAliasToTokenIssuer="true"/>
 </Context>
