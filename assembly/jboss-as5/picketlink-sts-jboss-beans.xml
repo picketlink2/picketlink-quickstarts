@@ -2,7 +2,8 @@
 
 <deployment xmlns="urn:jboss:bean-deployer:2.0">
 
-	<!-- ejb3 test application-policy definition -->
+	<!-- JAAS LoginModule configuration to be used by the PicketLink STS. -->
+	
 	<application-policy xmlns="urn:jboss:security-beans:1.0"
 		name="picketlink-sts">
 		<authentication>
