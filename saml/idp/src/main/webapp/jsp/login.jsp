@@ -24,7 +24,6 @@
 <html>
 <head>
 <title>Welcome to JBoss Application Server 7</title>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="StyleSheet" href="css/idp.css" type="text/css">
 </head>
 
