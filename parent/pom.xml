@@ -138,18 +138,41 @@
 	</build>
 
 	<repositories>
-		<repository>
-			<id>jboss-public-repository-group</id>
-			<name>JBoss Public Maven Repository Group</name>
-			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
-			<layout>default</layout>
-			<releases>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<updatePolicy>never</updatePolicy>
-			</snapshots>
-		</repository>
-	</repositories>
+     <repository>
+       <id>jboss-public-repository-group</id>
+       <name>JBoss Public Maven Repository Group</name>
+       <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+       <layout>default</layout>
+       <releases>
+         <enabled>true</enabled>
+         <updatePolicy>never</updatePolicy>
+       </releases>
+       <snapshots>
+         <enabled>true</enabled>
+         <updatePolicy>never</updatePolicy>
+       </snapshots>
+     </repository>
+    <repository>
+      <id>repository.jboss.org</id>
+      <name>JBoss Repository</name>
+      <layout>default</layout>
+      <url>http://repository.jboss.org/maven2/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>snapshots.jboss.org</id>
+      <name>JBoss Snapshots Repository</name>
+      <layout>default</layout>
+      <url>http://snapshots.jboss.org/maven2/</url>
+      <snapshots>
+         <enabled>true</enabled>
+      </snapshots>
+      <releases>
+         <enabled>false</enabled>
+      </releases>
+    </repository>
+  </repositories>
 
 </project>
