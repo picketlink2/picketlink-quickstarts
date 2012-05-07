@@ -26,7 +26,7 @@
 	<packaging>pom</packaging>
 
 	<url>
-        https://github.com/pedroigor/picketlink-quickstarts
+        https://github.com/picketlink/picketlink-quickstarts
     </url>
 
 	<scm>
@@ -49,14 +49,14 @@
 	</licenses>
 
 	<properties>
-		<jboss.as.scm.url>https://github.com/pedroigor/picketlink-quickstarts</jboss.as.scm.url>
-		<jboss.as.scm.connection>git@github.com:pedroigor/picketlink-quickstarts</jboss.as.scm.connection>
+		<jboss.as.scm.url>https://github.com/picketlink/picketlink-quickstarts</jboss.as.scm.url>
+		<jboss.as.scm.connection>git@github.com:picketlink/picketlink-quickstarts</jboss.as.scm.connection>
 
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<maven.compiler.target>1.6</maven.compiler.target>
 
 		<!-- PicketLink version supported -->
-		<version.picketlink>2.1.0.Final</version.picketlink>
+		<version.picketlink>2.1.1.Final</version.picketlink>
 
 		<version.junit>4.8.2</version.junit>
 
@@ -136,55 +136,56 @@
 			</plugin>
 		</plugins>
 	</build>
-<distributionManagement>
-  <repository>
-  <id>jboss-releases-repository</id>
-  <name>JBoss Releases Repository</name>
-  <url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</url>
-  </repository>
-  <snapshotRepository>
-  <id>jboss-snapshots-repository</id>
-  <name>JBoss Snapshots Repository</name>
-  <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
-  </snapshotRepository>
-  </distributionManagement>
+	
+	<distributionManagement>
+		<repository>
+			<id>jboss-releases-repository</id>
+			<name>JBoss Releases Repository</name>
+			<url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</url>
+		</repository>
+		<snapshotRepository>
+			<id>jboss-snapshots-repository</id>
+			<name>JBoss Snapshots Repository</name>
+			<url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<repositories>
-     <repository>
-       <id>jboss-public-repository-group</id>
-       <name>JBoss Public Maven Repository Group</name>
-       <url>http://repository.jboss.org/nexus/content/groups/public/</url>
-       <layout>default</layout>
-       <releases>
-         <enabled>true</enabled>
-         <updatePolicy>never</updatePolicy>
-       </releases>
-       <snapshots>
-         <enabled>true</enabled>
-         <updatePolicy>never</updatePolicy>
-       </snapshots>
-     </repository>
-    <repository>
-      <id>repository.jboss.org</id>
-      <name>JBoss Repository</name>
-      <layout>default</layout>
-      <url>http://repository.jboss.org/maven2/</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>snapshots.jboss.org</id>
-      <name>JBoss Snapshots Repository</name>
-      <layout>default</layout>
-      <url>http://snapshots.jboss.org/maven2/</url>
-      <snapshots>
-         <enabled>true</enabled>
-      </snapshots>
-      <releases>
-         <enabled>false</enabled>
-      </releases>
-    </repository>
-  </repositories>
+		<repository>
+			<id>jboss-public-repository-group</id>
+			<name>JBoss Public Maven Repository Group</name>
+			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>repository.jboss.org</id>
+			<name>JBoss Repository</name>
+			<layout>default</layout>
+			<url>http://repository.jboss.org/maven2/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>snapshots.jboss.org</id>
+			<name>JBoss Snapshots Repository</name>
+			<layout>default</layout>
+			<url>http://snapshots.jboss.org/maven2/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
+	</repositories>
 
 </project>
