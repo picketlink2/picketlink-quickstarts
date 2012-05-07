@@ -21,9 +21,13 @@ For each target server there is a directory with specific configuration files. T
 To build the examples execute the following command:
 
 *mvn -Dbinding=jboss -Dbinding-version=as7 clean install* (package and deploy to JBoss AS7)
+
 or
+
 *mvn -Dbinding=jboss -Dbinding-version=as5 clean install* (package and deploy to JBoss AS5)
+
 or
+
 *mvn -Dbinding=tomcat -Dbinding-version=6 clean install* (package and deploy to Apache Tomcat 6)
 
 Where *binding* refers to the server where package will be deployed and *binding-version* its version.
