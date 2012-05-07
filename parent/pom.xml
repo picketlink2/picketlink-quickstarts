@@ -24,19 +24,6 @@
 	<name>PicketLink Federation: Quickstarts Parent</name>
 	<description>This project provides some examples about using PicketLink Federation.</description>
 	
-	<developers>
-		<developer>
-			<name>Anil Saldhana</name>
-			<organization>Red Hat Inc.</organization>
-			<roles>Project Lead</roles>
-		</developer>
-		<developer>
-			<name>Pedro Silva</name>
-			<organization>Red Hat Inc.</organization>
-			<roles>Developer</roles>
-		</developer>
-	</developers>
-
 	<packaging>pom</packaging>
 
 	<url>
@@ -53,6 +40,21 @@
 		<name>JBoss, a division of Red Hat</name>
 		<url>http://www.jboss.org</url>
 	</organization>
+
+	<developers>
+		<developer>
+			<name>Anil Saldhana</name>
+			<roles>
+				<role>Project Lead</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>Pedro Silva</name>
+			<roles>
+				<role>Developer</role>
+			</roles>
+		</developer>
+	</developers>
 
 	<licenses>
 		<license>
