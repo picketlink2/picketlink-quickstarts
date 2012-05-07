@@ -22,6 +22,20 @@
 	<version>2.1.1.Final</version>
 
 	<name>PicketLink Federation: Quickstarts Parent</name>
+	<description>This project provides some examples about using PicketLink Federation.</description>
+	
+	<developers>
+		<developer>
+			<name>Anil Saldhana</name>
+			<organization>Red Hat Inc.</organization>
+			<roles>Project Lead</roles>
+		</developer>
+		<developer>
+			<name>Pedro Silva</name>
+			<organization>Red Hat Inc.</organization>
+			<roles>Developer</roles>
+		</developer>
+	</developers>
 
 	<packaging>pom</packaging>
 
