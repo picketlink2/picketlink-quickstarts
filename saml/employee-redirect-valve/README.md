@@ -4,24 +4,5 @@ This project is an implementation of a PicketLink Service Provider.
 
 ## Example Description ##
 
-This examples demonstrates how to configure an web application as a Service Provider using HTTP Redirect Binding and Digital Signature in SAML Assertions.
-
-## Build Information ##
-
-This example is tested in the following servers:
-
-+ JBoss Application Server 5.x
-+ JBoss Application Server 7.x
-+ Apache Tomcat 6.x
-
-For each target server there is a directory with specific configuration files. These files must be present in the resulting package in order to be deployed on an specific server.
-
-+ conf/jboss-as5
-+ conf/jboss-as7
-+ conf/tomcat-6
-
-To build the example execute the following command:
-
-*mvn -Dbinding=jboss -Dbinding-version=as7 clean install*
-
-Where *binding* refers to wich server the package should be deployed and *binding-version* to its version.
+This example demonstrates how to configure an web application as a Service Provider using HTTP Redirect Binding.
+*This example uses a deprecated configuration. It's purpose is only to test and shows how to use the old configuration. Please consider the employee example instead.*

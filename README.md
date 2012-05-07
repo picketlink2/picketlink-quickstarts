@@ -6,7 +6,7 @@ For more informations see https://docs.jboss.org/author/display/PLINK/PicketLink
 
 ## Build Information ##
 
-This example is tested in the following servers:
+The examples were tested in the following servers:
 
 + JBoss Application Server 5.x
 + JBoss Application Server 7.x
@@ -14,12 +14,16 @@ This example is tested in the following servers:
 
 For each target server there is a directory with specific configuration files. These files must be present in the resulting package in order to be deployed on an specific server. For example, considering the saml/idp example:
 
-+ saml/idp/conf/jboss-as5
-+ saml/idp/conf/jboss-as7
-+ saml/idp/conf/tomcat-6
++ saml/idp/conf/jboss-as5: JBoss AS5 specific configuration files.
++ saml/idp/conf/jboss-as7: JBoss AS7 specific configuration files.
++ saml/idp/conf/tomcat-6 : Apache Tomcat 6 configuration files.
 
-To build the example execute the following command:
+To build the examples execute the following command:
 
-*mvn -Dbinding=jboss -Dbinding-version=as7 clean install*
+*mvn -Dbinding=jboss -Dbinding-version=as7 clean install* (package and deploy to JBoss AS7)
+or
+*mvn -Dbinding=jboss -Dbinding-version=as5 clean install* (package and deploy to JBoss AS5)
+or
+*mvn -Dbinding=tomcat -Dbinding-version=6 clean install* (package and deploy to Apache Tomcat 6)
 
-Where *binding* refers to wich server the package should be deployed and *binding-version* to its version.
+Where *binding* refers to the server where package will be deployed and *binding-version* its version.
