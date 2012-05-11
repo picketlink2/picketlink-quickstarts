@@ -31,3 +31,5 @@ or
 *mvn -Dbinding=tomcat -Dbinding-version=6 clean install* (package and deploy to Apache Tomcat 6)
 
 Where *binding* refers to the server where package will be deployed and *binding-version* its version.
+
+
