@@ -22,5 +22,9 @@
 			class="org.picketlink.identity.federation.web.handlers.saml2.SAML2AuthenticationHandler" />
 		<Handler
 			class="org.picketlink.identity.federation.web.handlers.saml2.RolesGenerationHandler" />
+      <Handler
+            class="org.picketlink.identity.federation.web.handlers.saml2.SAML2SignatureGenerationHandler" />
+      <Handler
+            class="org.picketlink.identity.federation.web.handlers.saml2.SAML2SignatureValidationHandler" />
 	</Handlers>
 </PicketLink>
