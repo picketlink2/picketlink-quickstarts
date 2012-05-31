@@ -2,6 +2,5 @@
 	<Valve
 		className="org.picketlink.identity.federation.bindings.tomcat.idp.IDPSAMLDebugValve" />
 	<Valve
-		className="org.picketlink.identity.federation.bindings.tomcat.idp.IDPWebBrowserSSOValve"
-		signOutgoingMessages="false"/>
+		className="org.picketlink.identity.federation.bindings.tomcat.idp.IDPWebBrowserSSOValve"/>
 </Context>

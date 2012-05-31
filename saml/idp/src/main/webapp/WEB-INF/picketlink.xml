@@ -15,7 +15,7 @@
 		<Handler
 			class="org.picketlink.identity.federation.web.handlers.saml2.RolesGenerationHandler" />
 	</Handlers>
-	<PicketLinkSTS xmlns="urn:picketlink:identity-federation:config:1.0">
+	<PicketLinkSTS xmlns="urn:picketlink:identity-federation:config:1.0" TokenTimeout="5000" ClockSkew="0">
 		<TokenProviders>
 			<TokenProvider
 				ProviderClass="org.picketlink.identity.federation.core.saml.v1.providers.SAML11AssertionTokenProvider"
@@ -24,10 +24,7 @@
 			<TokenProvider
 				ProviderClass="org.picketlink.identity.federation.core.saml.v2.providers.SAML20AssertionTokenProvider"
 				TokenType="urn:oasis:names:tc:SAML:2.0:assertion"
-				TokenElement="Assertion" TokenElementNS="urn:oasis:names:tc:SAML:2.0:assertion">
-				<Property Key="ASSERTION_VALIDITY" Value="5000"/>
-				<Property Key="CLOCK_SKEW" Value="0"/>
-			</TokenProvider>
+				TokenElement="Assertion" TokenElementNS="urn:oasis:names:tc:SAML:2.0:assertion" />
 		</TokenProviders>
 	</PicketLinkSTS>
 
