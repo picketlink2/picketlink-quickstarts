@@ -15,6 +15,10 @@
 		<Handler
 			class="org.picketlink.identity.federation.web.handlers.saml2.RolesGenerationHandler" />
 	</Handlers>
+	<!-- 
+		The configuration bellow defines a token timeout and a clock skew. Both configurations will be used during the SAML Assertion creation.
+		This configuration is optional. It is defined only to show you how to set the token timeout and clock skew configuration. 
+	 -->
 	<PicketLinkSTS xmlns="urn:picketlink:identity-federation:config:1.0" TokenTimeout="5000" ClockSkew="0">
 		<TokenProviders>
 			<TokenProvider
