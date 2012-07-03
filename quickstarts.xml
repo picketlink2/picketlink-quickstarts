@@ -59,6 +59,11 @@
 			<destName>idp-sig.war</destName>
 		</file>
 		<file>
+			<source>saml/idp-enc/target/idp-enc-${project.version}-${binding}-${binding-version}.war
+			</source>
+			<destName>idp-enc.war</destName>
+		</file>
+		<file>
 			<source>ws-trust/picketlink-sts/target/picketlink-sts-${project.version}-${binding}-${binding-version}.war
 			</source>
 			<destName>picketlink-sts.war</destName>
