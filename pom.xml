@@ -36,6 +36,7 @@
 		<!-- SAML Support Examples -->
 		<module>saml/idp</module>
 		<module>saml/idp-sig</module>
+		<module>saml/idp-enc</module>
 		<module>saml/employee</module>
 		<module>saml/employee-redirect-valve</module>
 		<module>saml/employee-sig</module>
