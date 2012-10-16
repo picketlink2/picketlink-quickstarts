@@ -37,12 +37,14 @@
 		<module>saml/idp</module>
 		<module>saml/idp-sig</module>
 		<module>saml/idp-enc</module>
+		<module>saml/idp-metadata</module>
 		<module>saml/employee</module>
 		<module>saml/employee-redirect-valve</module>
 		<module>saml/employee-sig</module>
 		<module>saml/sales-post</module>
 		<module>saml/sales-post-valve</module>
 		<module>saml/sales-post-sig</module>
+		<module>saml/sales-metadata</module>
 		<module>saml/sales-saml11</module>
 
 		<!-- WS-Trust Support Examples -->

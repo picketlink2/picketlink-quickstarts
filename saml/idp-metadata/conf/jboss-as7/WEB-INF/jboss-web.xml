@@ -1,0 +1,11 @@
+<jboss-web>
+  <security-domain>idp</security-domain>
+  <context-root>idp-metadata</context-root>
+  <valve>
+     <class-name>org.picketlink.identity.federation.bindings.tomcat.idp.IDPWebBrowserSSOValve</class-name>
+     <param>
+     	<param-name>configProvider</param-name>
+     	<param-value>org.picketlink.identity.federation.web.config.IDPMetadataConfigurationProvider</param-value>
+     </param>
+   </valve>
+</jboss-web>
