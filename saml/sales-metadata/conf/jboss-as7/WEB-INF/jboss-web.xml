@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web>
+	<security-domain>sp</security-domain>
+	<context-root>sales-metadata</context-root>
+	<valve>
+		<class-name>org.picketlink.identity.federation.bindings.tomcat.sp.ServiceProviderAuthenticator
+		</class-name>
+		<param>
+			<param-name>configProvider</param-name>
+			<param-value>org.picketlink.identity.federation.web.config.SPPostMetadataConfigurationProvider</param-value>
+		</param>
+	</valve>
+</jboss-web>
