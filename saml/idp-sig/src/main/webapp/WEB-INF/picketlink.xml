@@ -1,5 +1,5 @@
 <PicketLink xmlns="urn:picketlink:identity-federation:config:2.1">
-	<PicketLinkIDP xmlns="urn:picketlink:identity-federation:config:1.0" SupportsSignatures="true">
+	<PicketLinkIDP xmlns="urn:picketlink:identity-federation:config:2.1" SupportsSignatures="true">
 		<IdentityURL>${idp-sig.url::http://localhost:8080/idp-sig/}</IdentityURL>
 		<Trust>
 			<Domains>localhost,jboss.com,jboss.org,redhat.com,amazonaws.com</Domains>
