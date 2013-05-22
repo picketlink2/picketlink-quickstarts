@@ -1,5 +1,5 @@
 <PicketLink xmlns="urn:picketlink:identity-federation:config:2.1">
-	<PicketLinkSP xmlns="urn:picketlink:identity-federation:config:1.0"
+	<PicketLinkSP xmlns="urn:picketlink:identity-federation:config:2.1"
 		ServerEnvironment="tomcat" BindingType="POST" SupportsSignatures="true">
 		<IdentityURL>${idp-sig.url::http://localhost:8080/idp-sig/}
 		</IdentityURL>
