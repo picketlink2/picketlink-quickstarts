@@ -43,3 +43,7 @@ PutObjectStoreDirHere
 /.m2
 #Temporary modules
 saml/idp-jpa-registry
+
+#IDEA
+lib/
+overlays/
