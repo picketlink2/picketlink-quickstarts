@@ -41,6 +41,7 @@
 		<module>saml/employee</module>
 		<module>saml/employee-redirect-valve</module>
 		<module>saml/employee-sig</module>
+        <module>saml/employee-multi-protected</module>
 		<module>saml/sales-post</module>
 		<module>saml/sales-post-valve</module>
 		<module>saml/sales-post-sig</module>
