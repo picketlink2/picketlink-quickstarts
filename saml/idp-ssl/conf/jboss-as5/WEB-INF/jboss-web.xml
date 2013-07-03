@@ -1,0 +1,4 @@
+<jboss-web>
+	<security-domain>idp-ssl</security-domain>
+	<context-root>idp-ssl</context-root>
+</jboss-web>
