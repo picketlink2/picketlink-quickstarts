@@ -37,6 +37,7 @@
 		<module>saml/idp</module>
 		<module>saml/idp-sig</module>
 		<module>saml/idp-enc</module>
+        <module>saml/idp-ssl</module>
 		<module>saml/idp-metadata</module>
 		<module>saml/employee</module>
 		<module>saml/employee-redirect-valve</module>
