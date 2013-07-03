@@ -2,7 +2,7 @@
 
 ## Example Description ##
 
-This example demonstrates how to configure an web application as an Identity Provider and supports SSL Client Authentication.
+This example demonstrates how to configure a web application as an Identity Provider supporting SSL Client Authentication.
 
 This Identity Provider is configured to authenticate users in two ways:
 
@@ -75,7 +75,6 @@ Add the following security domain to your server installation. If you're in stan
         <jsse keystore-password="change_it" keystore-url="jboss.server.config.dir/server.keystore" truststore-password="change_it" truststore-url="jboss.server.config.dir/server.keystore" client-auth="true"/>
     </security-domain>
 
-The configuration above will first try to validate any provided certificates. If no certificate was provided or the authentication fails, we fallback to a user/password based authentication.
+The configuration above will first try to validate any provided certificate. If no certificate was provided or the authentication fails, we fallback to a user/password based authentication.
 
-### JBoss AS/EAP SSL Configuration ###
 
