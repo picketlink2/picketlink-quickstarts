@@ -72,7 +72,7 @@
 		<maven.compiler.target>1.6</maven.compiler.target>
 
 		<!-- PicketLink version supported -->
-		<version.picketlink>2.1.10-SNAPSHOT</version.picketlink>
+		<version.picketlink>2.1.10.Final</version.picketlink>
 
 		<version.junit>4.8.2</version.junit>
 
