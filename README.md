@@ -18,17 +18,22 @@ For each target server there is a directory with specific configuration files. T
 + saml/idp/conf/jboss-as7: JBoss AS7 specific configuration files.
 + saml/idp/conf/tomcat-6 : Apache Tomcat 6 configuration files.
 
-To build the examples execute the following command:
+## Building ##
 
-*mvn -Dbinding=jboss -Dbinding-version=as7 clean install* (package and deploy to JBoss AS7)
+Package and deploy to JBoss AS7
+```
+mvn -Dbinding=jboss -Dbinding-version=as7 clean install
+```
 
-or
+Package and deploy to JBoss AS5
+```
+mvn -Dbinding=jboss -Dbinding-version=as5 clean install
+```
 
-*mvn -Dbinding=jboss -Dbinding-version=as5 clean install* (package and deploy to JBoss AS5)
-
-or
-
-*mvn -Dbinding=tomcat -Dbinding-version=6 clean install* (package and deploy to Apache Tomcat 6)
+Package and deploy to Apache Tomcat 6
+```
+mvn -Dbinding=tomcat -Dbinding-version=6 clean install
+```
 
 Where *binding* refers to the server where package will be deployed and *binding-version* its version.
 
