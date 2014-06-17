@@ -2,7 +2,7 @@
 	<PicketLinkSP xmlns="urn:picketlink:identity-federation:config:2.1"
 		ServerEnvironment="tomcat" BindingType="REDIRECT" RelayState="someURL">
 		<IdentityURL>${idp.url::http://localhost:8080/idp/}</IdentityURL>
-		<ServiceURL>${employee.url::http://localhost:8080/employee/}
+		<ServiceURL>${employee.url::http://localhost:8180/employee/}
 		</ServiceURL>
 	</PicketLinkSP>
 	<Handlers xmlns="urn:picketlink:identity-federation:handler:config:2.1">

@@ -4,27 +4,11 @@
 	version="2.5">
 
 	<display-name>Fedbridge Test SALES Application</display-name>
-	<description>
-    Just a Test SP for Fedbridge Project
-  </description>
+	<description>Just a Test SP for Fedbridge Project</description>
 
-	<!-- Define a Security Constraint on this Application -->
-	<security-constraint>
-		<web-resource-collection>
-			<web-resource-name>SALES Application</web-resource-name>
-			<url-pattern>/*</url-pattern>
-		</web-resource-collection>
-		<auth-constraint>
-			<role-name>manager</role-name>
-		</auth-constraint>
-	</security-constraint>
 
-	<!-- Define a security constraint that gives unlimted access to freezone -->
+	<!-- Define a security constraint that gives unlimted access -->
 	<security-constraint>
-		<web-resource-collection>
-			<web-resource-name>freezone</web-resource-name>
-			<url-pattern>/freezone/*</url-pattern>
-		</web-resource-collection>
 		<web-resource-collection>
 			<web-resource-name>images</web-resource-name>
 			<url-pattern>/images/*</url-pattern>
@@ -33,6 +17,40 @@
 			<web-resource-name>css</web-resource-name>
 			<url-pattern>/css/*</url-pattern>
 		</web-resource-collection>
+	</security-constraint>
+
+	<!-- Define a Security Constraint for Managers -->
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Managers Area</web-resource-name>
+			<url-pattern>/managers/*</url-pattern>
+		</web-resource-collection>
+		
+		<auth-constraint>
+			<role-name>manager</role-name>
+		</auth-constraint>
+	</security-constraint>
+	
+	<!-- Define a Security Constraint for Employers -->
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Employers Area</web-resource-name>
+			<url-pattern>/employers/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>employee</role-name>
+		</auth-constraint>
+	</security-constraint>
+	
+	<!-- Define a Security Constraint for Sales -->
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Sales Area</web-resource-name>
+			<url-pattern>/sales/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>sales</role-name>
+		</auth-constraint>
 	</security-constraint>
 
 	<!-- Define the Login Configuration for this Application -->
@@ -47,9 +65,13 @@
 
 	<!-- Security roles referenced by this web application -->
 	<security-role>
-		<description>
-      The role that is required to log in to the Manager Application
-    </description>
 		<role-name>manager</role-name>
 	</security-role>
+	<security-role>
+		<role-name>employee</role-name>
+	</security-role>
+	<security-role>
+		<role-name>sales</role-name>
+	</security-role>
+	
 </web-app>

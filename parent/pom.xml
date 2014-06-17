@@ -23,7 +23,7 @@
 
 	<name>PicketLink Federation: Quickstarts Parent</name>
 	<description>This project provides some examples about using PicketLink Federation.</description>
-	
+
 	<packaging>pom</packaging>
 
 	<url>
@@ -78,8 +78,7 @@
 
 		<!-- Indicate the defaut server/binding version to package the applications -->
 		<binding>jboss</binding>
-		<binding-version>as7</binding-version>
-
+		<binding-version>as5</binding-version>
 	</properties>
 
 	<dependencyManagement>
@@ -152,7 +151,7 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<distributionManagement>
 		<repository>
 			<id>jboss-releases-repository</id>
