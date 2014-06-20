@@ -8,9 +8,9 @@
 	<hr/>
 
 	<ul>
-		<li>Sales area: <a href="sales/sales.jsp">here</a></li>
-		<li>Employeers area: <a href="employers/employers.jsp">here</a></li>
-		<li>Managers area: <a href="managers/managers.jsp">here</a></li>
+		<li>Sales area: <a href="jsp/sales/sales.jsp">here</a></li>
+		<li>Employeers area: <a href="jsp/employers/employers.jsp">here</a></li>
+		<li>Managers area: <a href="jsp/managers/managers.jsp">here</a></li>
 	</ul>
 	
 </div>

@@ -2,12 +2,13 @@
 	<PicketLinkSP xmlns="urn:picketlink:identity-federation:config:2.1"
 		ServerEnvironment="tomcat" BindingType="POST">
 		<IdentityURL>${idp.url::http://localhost:8080/idp/}</IdentityURL>
+		
 		<!-- You need to put one service url for each restricted area defined on web.xml -->
-		<ServiceURL>${sales-post.url::http://localhost:8080/sales-post/}</ServiceURL>
-		<ServiceURL>${sales-post.url::http://localhost:8080/sales-post/managers/}</ServiceURL>
-		<ServiceURL>${sales-post.url::http://localhost:8080/sales-post/employers/}</ServiceURL>
-		<ServiceURL>${sales-post.url::http://localhost:8080/sales-post/sales/}</ServiceURL>
+		<ServiceURL>${sales-post.url::http://localhost:8080/sales-post/jsp/employers}</ServiceURL>
+		<ServiceURL>${sales-post.url::http://localhost:8080/sales-post/jsp/managers}</ServiceURL>
+		<ServiceURL>${sales-post.url::http://localhost:8080/sales-post/jsp/employers}</ServiceURL>
 	</PicketLinkSP>
+	
 	<Handlers xmlns="urn:picketlink:identity-federation:handler:config:2.1">
 		<Handler class="org.picketlink.identity.federation.web.handlers.saml2.SAML2LogOutHandler" />
 		<Handler class="org.picketlink.identity.federation.web.handlers.saml2.SAML2AuthenticationHandler" />

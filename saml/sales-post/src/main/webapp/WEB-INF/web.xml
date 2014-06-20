@@ -6,7 +6,10 @@
 	<display-name>Fedbridge Test SALES Application</display-name>
 	<description>Just a Test SP for Fedbridge Project</description>
 
-
+	<welcome-file-list>
+		<welcome-file>/jsp/index.jsp</welcome-file>
+	</welcome-file-list>
+	
 	<!-- Define a security constraint that gives unlimted access -->
 	<security-constraint>
 		<web-resource-collection>
@@ -23,9 +26,8 @@
 	<security-constraint>
 		<web-resource-collection>
 			<web-resource-name>Managers Area</web-resource-name>
-			<url-pattern>/managers/*</url-pattern>
+			<url-pattern>/jsp/managers/*</url-pattern>
 		</web-resource-collection>
-		
 		<auth-constraint>
 			<role-name>manager</role-name>
 		</auth-constraint>
@@ -35,7 +37,7 @@
 	<security-constraint>
 		<web-resource-collection>
 			<web-resource-name>Employers Area</web-resource-name>
-			<url-pattern>/employers/*</url-pattern>
+			<url-pattern>/jsp/employers/*</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
 			<role-name>employee</role-name>
@@ -46,7 +48,7 @@
 	<security-constraint>
 		<web-resource-collection>
 			<web-resource-name>Sales Area</web-resource-name>
-			<url-pattern>/sales/*</url-pattern>
+			<url-pattern>/jsp/sales/*</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
 			<role-name>sales</role-name>
