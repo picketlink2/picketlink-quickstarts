@@ -4,13 +4,13 @@
 <body>
 <div align="center">
 	<h1> <a href="/sales-post">Sales World </a></h1>
-	<%= request.getUserPrincipal() != null ? "<div align='right'> Logged as "+request.getUserPrincipal().getName()+" <a href='?GLO=true'>LogOut</a></div>" : "" %>
+	<%= request.getUserPrincipal() != null ? "<div align='right'> Logged as "+request.getUserPrincipal().getName() +"</div>" : "" %>
 	<hr/>
 
 	<ul>
-		<li><a href="jsp/sales/sales.jsp">Sales area</a></li>
-		<li><a href="jsp/employers/employers.jsp">Employeers area</a></li>
-		<li><a href="jsp/managers/managers.jsp">Managers area</a></li>
+		<li><a href="jsp/sales/index.jsp">Sales area</a></li>
+		<li><a href="jsp/employers/index.jsp">Employeers area</a></li>
+		<li><a href="jsp/managers/index.jsp">Managers area</a></li>
 	</ul>
 	
 	<br/>
