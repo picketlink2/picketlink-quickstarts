@@ -1,4 +1,3 @@
 <Context>
-  <Valve className="org.picketlink.identity.federation.bindings.tomcat.sp.ServiceProviderAuthenticator"
-  />
+  <Valve className="org.picketlink.identity.federation.bindings.tomcat.sp.ServiceProviderAuthenticator"/>
 </Context>
