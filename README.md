@@ -23,60 +23,63 @@ For each target server there is a directory with specific configuration files. T
 
 On $JBOSS_HOME/standalone/configuration/standalone.xml add the security domains below
 ```
-   <security-domain name="idp" cache-type="default">
-       <authentication>
-           <login-module code="UsersRoles" flag="required">
-                <module-option name="usersProperties" value="users.properties" />
-                <module-option name="rolesProperties" value="roles.properties" />
-           </login-module>
-       </authentication>
-   </security-domain>      
-   
-   <security-domain name="picketlink-sts" cache-type="default">
-       <authentication>
-            <login-module code="UsersRoles" flag="required">
-                <module-option name="usersProperties" value="users.properties" />
-                <module-option name="rolesProperties" value="roles.properties" />
-            </login-module>
-        </authentication>
-   </security-domain>
-   
-   <security-domain name="sp" cache-type="default">
-         <authentication>
-             <login-module code="org.picketlink.identity.federation.bindings.jboss.auth.SAML2LoginModule" flag="required"/>
-         </authentication>
-   </security-domain>
+<security-domain name="idp" cache-type="default">
+   <authentication>
+       <login-module code="UsersRoles" flag="required">
+            <module-option name="usersProperties" value="users.properties" />
+            <module-option name="rolesProperties" value="roles.properties" />
+       </login-module>
+   </authentication>
+</security-domain>      
+
+<security-domain name="picketlink-sts" cache-type="default">
+   <authentication>
+        <login-module code="UsersRoles" flag="required">
+            <module-option name="usersProperties" value="users.properties" />
+            <module-option name="rolesProperties" value="roles.properties" />
+        </login-module>
+    </authentication>
+</security-domain>
+
+<security-domain name="sp" cache-type="default">
+     <authentication>
+         <login-module code="org.picketlink.identity.federation.bindings.jboss.auth.SAML2LoginModule" flag="required"/>
+     </authentication>
+</security-domain>
 ```
 
 ### AS 5 ###
+Copy assembly/jboss-as5/picketlink-* in $JBOSS_HOME/server/server-name/deploy
+
+or
 
 On $JBOSS_HOME/server/default/conf/login-config.xml add the security domains below
 ```
-  <application-policy name="idp">
-    <authentication>
-      <login-module code="org.jboss.security.auth.spi.UsersRolesLoginModule" flag="required">
-        <module-option name="usersProperties" value="users.properties" />
-        <module-option name="rolesProperties" value="roles.properties" />
-      </login-module>
-    </authentication>
-  </application-policy>
+<application-policy name="idp">
+	<authentication>
+	  <login-module code="org.jboss.security.auth.spi.UsersRolesLoginModule" flag="required">
+	    <module-option name="usersProperties" value="users.properties" />
+	    <module-option name="rolesProperties" value="roles.properties" />
+	  </login-module>
+	</authentication>
+</application-policy>
 
 
-  <application-policy name="picketlink-sts">
-    <authentication>
-      <login-module code="org.jboss.security.auth.spi.UsersRolesLoginModule" flag="required">
-        <module-option name="usersProperties" value="users.properties" />
-        <module-option name="rolesProperties" value="roles.properties" />
-      </login-module>
-    </authentication>
-  </application-policy>
+<application-policy name="picketlink-sts">
+	<authentication>
+	  <login-module code="org.jboss.security.auth.spi.UsersRolesLoginModule" flag="required">
+	    <module-option name="usersProperties" value="users.properties" />
+	    <module-option name="rolesProperties" value="roles.properties" />
+	  </login-module>
+	</authentication>
+</application-policy>
 
 
-  <application-policy name="sp">
-    <authentication>
-      <login-module code="org.picketlink.identity.federation.bindings.jboss.auth.SAML2LoginModule" flag="required" />
-    </authentication>
-  </application-policy>
+<application-policy name="sp">
+	<authentication>
+	  <login-module code="org.picketlink.identity.federation.bindings.jboss.auth.SAML2LoginModule" flag="required" />
+	</authentication>
+</application-policy>
 ```
 
 ## Building Project ##
