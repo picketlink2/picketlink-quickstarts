@@ -3,9 +3,7 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	version="2.5">
 	<display-name>PicketLink Employee Application</display-name>
-	<description>
-		Just a Test SP
-	</description>
+	<description> Just a Test SP </description>
 
 	<!-- Define a Security Constraint on this Application -->
 	<security-constraint>

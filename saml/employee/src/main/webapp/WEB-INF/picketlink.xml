@@ -6,15 +6,10 @@
 		</ServiceURL>
 	</PicketLinkSP>
 	<Handlers xmlns="urn:picketlink:identity-federation:handler:config:2.1">
-		<Handler
-			class="org.picketlink.identity.federation.web.handlers.saml2.SAML2LogOutHandler" />
-		<Handler
-			class="org.picketlink.identity.federation.web.handlers.saml2.SAML2AuthenticationHandler">
-			
+		<Handler class="org.picketlink.identity.federation.web.handlers.saml2.SAML2LogOutHandler" />
+		<Handler class="org.picketlink.identity.federation.web.handlers.saml2.SAML2AuthenticationHandler">
 			<Option Key="ASSERTION_SESSION_ATTRIBUTE_NAME" Value="org.picketlink.sp.assertion"/>
-			
 		</Handler>
-		<Handler
-			class="org.picketlink.identity.federation.web.handlers.saml2.RolesGenerationHandler" />
+		<Handler class="org.picketlink.identity.federation.web.handlers.saml2.RolesGenerationHandler" />
 	</Handlers>
 </PicketLink>
